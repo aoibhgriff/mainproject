@@ -1,6 +1,11 @@
 <script>
+    import cars from '$lib/data/cars.json';
 	let { data } = $props();
 </script>
 
-
-<h1>welcome to the home page</h1>
+{#each cars as car}
+    <div>
+        <h2>{car.name}</h2>
+        <a href={`/cars/${car.id}`}>View Details</a>
+    </div>
+{/each}

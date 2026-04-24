@@ -29,3 +29,21 @@ My case study is for luxury car hire / wedding car hire so I first got into plan
 I began by creating a shell after installing the starter project containing all currently assumed routes and a cars.json file within the data folder and putting blank page svelte files in each route to work with.
 
 Then I commit this Stage 0 update to github.
+
+- Stage 1 - 
+Setting up
+I went through some basic motions to start setting up key parts of the site
+
+1. Added placeholder data to cars.json
+
+2. Imported the Car JSON data into the Cars page
+
+3. Set up a basic view with just the name of the car and a link to the specific car using the [id]
+
+4. Set up the ID specific car page to also take in the JSON data, display the car based on its ID and print the name and price.
+
+5. Created some global component files (Nav.svelte, Header.svelte, Footer.svelte)
+
+Next I plan to start looking at creating the booking form and populating the componenets
+
+Then I commit this Stage 1 update to github.

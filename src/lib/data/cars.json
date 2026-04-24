@@ -1,0 +1,14 @@
+[
+	{
+		"id": "1",
+		"name": "Rolls Royce",
+		"price": 600,
+		"image": "/images/matt.png"
+	},
+	{
+		"id": "2",
+		"name": "Ferrari",
+		"price": 500,
+		"image": "/images/matt.png"
+	}
+]
