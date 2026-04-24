@@ -66,7 +66,7 @@ I created some of the core elements for the booking system and general updates
 
 Next I plan to work on finishing the database booking entry and add files to the my bookings page
 
-Then I commit this Stage 2 update to github
+Then I commit this Stage 2 update to github.
 
 - Stage 3 - 
 Booking system finished
@@ -84,4 +84,21 @@ I finished implementing the booking system
 
 Next I plan to complete the Admin Role specific page
 
-Then I commit this Stage 3 update to github
+Then I commit this Stage 3 update to github.
+
+- Stage 4 -
+Admin page implemented
+Added an admin page only accessible to admins that can manage bookings
+
+1. Created Admin page and page.server.js to allow for viewing bookings and performing approvals / rejections
+
+2. Made change to Nav as admin wasnt showing up when logged into an Admin user
+
+3. Made change to header as role wasn't printing beside userName
+(both 2 and 3 were issues with the role of the user so i swapped to using the category)
+
+4. Deleted some files I added pre-emptively before
+
+Next I plan to go through my site and see if there's anything that needs fixing
+
+Then I commit this Stage 4 update to github.

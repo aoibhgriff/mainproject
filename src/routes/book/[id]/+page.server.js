@@ -4,7 +4,7 @@ import { db } from '$lib/server/db';
 import { booking } from '$lib/server/db/schema';
 
 export const load = async ({ params, locals }) => {
-
+    
 	if (!locals.user) {
 		throw redirect(302, '/login');
 	}

@@ -8,7 +8,7 @@
 	{#if data.isLoggedIn}
 		<p>
 			Welcome <strong>{data.user.name}</strong>
-			({data.user.role})
+			({data.user.category})
 		</p>
 
 		<form method="post" action="/logout">

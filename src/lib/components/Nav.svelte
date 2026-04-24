@@ -10,7 +10,7 @@
 		<a href="/mybookings">My Bookings</a>
 	{/if}
 
-	{#if data.user?.role === 'ROLE_ADMIN'}
+	{#if data.user?.category === 'elite'}
 		<a href="/admin">Admin</a>
 	{/if}
 </nav>
