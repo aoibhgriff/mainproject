@@ -1,5 +1,7 @@
 import cars from '$lib/data/cars.json';
 import { redirect } from '@sveltejs/kit';
+import { db } from '$lib/server/db';
+import { booking } from '$lib/server/db/schema';
 
 export const load = async ({ params, locals }) => {
 
@@ -9,9 +11,7 @@ export const load = async ({ params, locals }) => {
 
 	const car = cars.find(c => c.id === params.id);
 
-	return {
-		car
-	};
+	return { car };
 };
 
 export const actions = {
@@ -23,10 +23,23 @@ export const actions = {
 
 		const form = await request.formData();
 
-		console.log("Booking by:", locals.user.name);
-		console.log("Car:", params.id);
-		console.log("Date:", form.get('date'));
+		const car = cars.find(c => c.id === params.id);
 
-		return { success: true };
+		await db.insert(booking).values({
+			userId: locals.user.id,
+			userName: locals.user.name,
+
+			carId: car.id,
+			carName: car.name,
+
+			date: form.get('date'),
+			eventType: form.get('eventType'),
+
+			status: 'pending'
+		});
+
+		return {
+			success: true
+		};
 	}
 };

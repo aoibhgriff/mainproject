@@ -7,7 +7,7 @@
 	<a href="/cars">Cars</a>
 
 	{#if data.isLoggedIn}
-		<a href="/my-bookings">My Bookings</a>
+		<a href="/mybookings">My Bookings</a>
 	{/if}
 
 	{#if data.user?.role === 'ROLE_ADMIN'}

@@ -67,3 +67,21 @@ I created some of the core elements for the booking system and general updates
 Next I plan to work on finishing the database booking entry and add files to the my bookings page
 
 Then I commit this Stage 2 update to github
+
+- Stage 3 - 
+Booking system finished
+I finished implementing the booking system 
+
+1. Changed a routing error in Nav
+
+2. Used GenAI to add the database commands to the booking system
+
+3. Performed an npm db:push
+
+4. Created and populated the mybookings page and page.server.js to ensure the logged in user could only see their own bookings
+
+5. Tested functionality by placing orders through different users and checking the mybookings page
+
+Next I plan to complete the Admin Role specific page
+
+Then I commit this Stage 3 update to github

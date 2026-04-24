@@ -5,13 +5,14 @@
 <h1>Book {data.car.name}</h1>
 
 <form method="POST">
-	<label>Date</label>
-	<input type="date" name="date" required>
+	<label for="date">Date</label>
+    <input id="date" type="date" name="date" required>
 
-	<label>Event Type</label>
-	<select name="eventType">
+    <label for="eventType">Event Type</label>
+    <select id="eventType" name="eventType">
 		<option>Wedding</option>
 		<option>Prom</option>
+		<option>Corporate</option>
 	</select>
 
 	<button type="submit" formaction="?/book">
@@ -20,5 +21,5 @@
 </form>
 
 {#if form?.success}
-	<p>Booking submitted!</p>
+	<p>Booking submitted successfully!</p>
 {/if}
