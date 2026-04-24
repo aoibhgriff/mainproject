@@ -47,3 +47,23 @@ I went through some basic motions to start setting up key parts of the site
 Next I plan to start looking at creating the booking form and populating the componenets
 
 Then I commit this Stage 1 update to github.
+
+- Stage 2 - 
+Booking system setup
+I created some of the core elements for the booking system and general updates
+
+1. Wrote out my component files and updated layout.svelte accordingly (including some handling for the type of user currently logged in)
+
+2. Added a booking link to the car ID page
+
+3. Created a proper booking route with a form that allows you to book the car based on the ID of the car you were looking at
+
+4. Removed an unnecessary file I added pre-emptively
+
+5. Used GenAI to help me add a bookings table to the database / schema.js (currently unused)
+
+6. Created a new route called my bookings where ideally, users will be able to see their own bookings
+
+Next I plan to work on finishing the database booking entry and add files to the my bookings page
+
+Then I commit this Stage 2 update to github

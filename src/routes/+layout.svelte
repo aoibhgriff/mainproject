@@ -1,34 +1,23 @@
 <script>
 	import favicon from '$lib/assets/favicon.svg';
+	import Nav from '$lib/components/Nav.svelte';
+	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
 	let { children, data } = $props();
 </script>
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<title>Luxury Car Hire</title>
 </svelte:head>
 
+<Header data={data} />
 
+<Nav data={data} />
 
-<header>
-	{#if data.isLoggedIn}
-		You are logged in as: <strong>{data.user.name}</strong>
-		<br>
-		<form method="post" action="/logout">
-			<button type="submit">Logout</button>
-		</form>
+<main>
+	{@render children()}
+</main>
 
-	{:else}
-		You are not logged in - please <a href="/login">login</a>
-	{/if}
-</header>
-<hr>
-
-{@render children()}
-
-
-<style>
-	#profile_image {
-		width: 50px;
-	}
-</style>
+<Footer />

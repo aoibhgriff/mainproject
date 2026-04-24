@@ -6,4 +6,15 @@ export const task = sqliteTable('task', {
 	priority: integer('priority').notNull().default(1)
 });
 
+export const booking = sqliteTable('booking', {
+	id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
+	userId: text('user_id').notNull(),
+	userName: text('user_name').notNull(),
+	carId: text('car_id').notNull(),
+	carName: text('car_name').notNull(),
+	date: text('date').notNull(),
+	eventType: text('event_type').notNull(),
+	status: text('status').notNull().default('pending')
+});
+
 export *  from './auth.schema';
