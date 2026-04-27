@@ -17,7 +17,7 @@ export const user = sqliteTable("user", {
     .$onUpdate(() => /* @__PURE__ */ new Date())
     .notNull(),
   balance: integer("balance").default(0),
-  category: text("category").default(""),
+category: text("category").default("bronze"),
 });
 
 export const session = sqliteTable(

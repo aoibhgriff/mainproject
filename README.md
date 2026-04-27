@@ -151,3 +151,18 @@ Next I plan to flesh out the fields for users (Add maybe 1 or 2)
 
 Then I commit this Stage 7 update to github.
 
+- Stage 8 -
+JSON API Server
+Created JSON API server for cars
+
+1. I attempted to add some user fields and essentially broke the entire database so I reset it and decided it wasn't worth potentially ruining everything to implement
+
+2. I installed Express in my project
+
+3. I created a server.js file and populated it to retrieve the car JSON data
+
+4. I ran it and tested that it worked properly
+
+Next I plan on completing the styling for the project
+
+Then I commit this Stage 8 update to github.
