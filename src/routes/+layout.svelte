@@ -3,6 +3,7 @@
 	import Nav from '$lib/components/Nav.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import '../app.css';
 
 	let { children, data } = $props();
 </script>

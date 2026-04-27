@@ -166,3 +166,19 @@ Created JSON API server for cars
 Next I plan on completing the styling for the project
 
 Then I commit this Stage 8 update to github.
+
+- Stage 9 -
+Styling using GenAI
+
+1. Incorporate TailwindCSS using GenAI
+
+2. Images all broke
+
+3. Put a global regular css file to control all images to ensure nothing breaks
+
+4. Site is now slightly ugly but fully functional
+
+Next I plan to fix any issues as I run into them but if not I am all finished
+
+Then I commit this Stage 9 update to github.
+

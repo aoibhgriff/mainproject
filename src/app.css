@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	background-color: #000000;
+	color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+	line-height: 1.6;
+}
+
+/* Typography base styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	margin-bottom: 1rem;
+}
+
+h1 {
+	font-size: 3rem;
+	color: #ffffff;
+}
+
+h2 {
+	font-size: 2.25rem;
+	color: #ffffff;
+}
+
+h3 {
+	font-size: 1.875rem;
+	color: #ffffff;
+}
+
+p {
+	font-size: 1rem;
+	color: #e8e8e8;
+	line-height: 1.8;
+}
+
+/* Luxury buttons */
+.btn {
+	padding: 0.875rem 2rem;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	border: 2px solid #D4AF37;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.btn-gold {
+	background-color: #D4AF37;
+	color: #000000;
+}
+
+.btn-gold:hover {
+	background-color: #E8D4A0;
+	border-color: #E8D4A0;
+	transform: translateY(-2px);
+	box-shadow: 0 8px 16px rgba(212, 175, 55, 0.3);
+}
+
+.btn-outline {
+	background-color: transparent;
+	color: #D4AF37;
+	border-color: #D4AF37;
+}
+
+.btn-outline:hover {
+	background-color: #D4AF37;
+	color: #000000;
+	box-shadow: 0 8px 16px rgba(212, 175, 55, 0.3);
+}
+
+/* Divider with gold accent */
+.divider {
+	height: 2px;
+	background: linear-gradient(to right, transparent, #D4AF37, transparent);
+	margin: 2rem 0;
+}
+
+/* Smooth transitions */
+a {
+	color: #D4AF37;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: #E8D4A0;
+}
+
+/* Luxury card style */
+.card {
+	background-color: #1a1a1a;
+	border: 1px solid #2d2d2d;
+	border-radius: 4px;
+	padding: 2rem;
+	transition: all 0.3s ease;
+}
+
+.card:hover {
+	border-color: #D4AF37;
+	box-shadow: 0 8px 24px rgba(212, 175, 55, 0.2);
+}
+
+/* Form inputs */
+input,
+textarea,
+select {
+	background-color: #1a1a1a;
+	color: #ffffff;
+	border: 2px solid #2d2d2d;
+	border-radius: 4px;
+	padding: 0.75rem 1rem;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1rem;
+	transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+	border-color: #D4AF37;
+	box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #D4AF37;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #E8D4A0;
+}
+
+img {
+	width: 100% !important;
+	max-width: 420px !important;
+	height: 260px !important;
+	object-fit: cover !important;
+}
