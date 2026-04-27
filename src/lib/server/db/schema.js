@@ -14,6 +14,7 @@ export const booking = sqliteTable('booking', {
 	carName: text('car_name').notNull(),
 	date: text('date').notNull(),
 	eventType: text('event_type').notNull(),
+	package: text('package').notNull(),
 	pickupLocation: text('pickup_location').notNull(),
 	duration: text('duration').notNull(),
 	requests: text('requests'),

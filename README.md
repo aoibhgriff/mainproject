@@ -133,3 +133,21 @@ Next I plan to do a small update to the booking page to showcase some of the car
 
 Then I commit this Stage 6 update to github.
 
+- Stage 7 -
+Package update
+I didn't really have any features that screamed "luxury" so I added packages
+
+1. I added package onto the booking db table.
+
+2. I pushed the DB update
+
+3. I Updated the book page to display package options
+
+4. I added a single line in both mybookings and admin to display which package has been booked
+
+5. I searched around and added bronze as default user category in auth.js upon testing registration and seeing no category get applied to new accounts
+
+Next I plan to flesh out the fields for users (Add maybe 1 or 2)
+
+Then I commit this Stage 7 update to github.
+

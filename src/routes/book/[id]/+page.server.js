@@ -31,6 +31,7 @@ export const actions = {
 
 		const date = form.get('date');
 		const eventType = form.get('eventType');
+		const packageType = form.get('package');
 		const pickupLocation = form.get('pickupLocation');
 		const duration = form.get('duration');
 		const requests = form.get('requests');
@@ -38,12 +39,10 @@ export const actions = {
 		const car = cars.find(c => c.id === params.id);
 
 		if (!car) {
-			return {
-				error: 'Invalid car selected.'
-			};
+			return { error: 'Invalid vehicle selected.' };
 		}
 
-		if (!date || !pickupLocation || !duration || !eventType) {
+		if (!date || !eventType || !packageType || !pickupLocation || !duration) {
 			return {
 				error: 'Please complete all required fields.'
 			};
@@ -92,6 +91,7 @@ export const actions = {
 			carName: car.name,
 			date,
 			eventType,
+			package: packageType,
 			pickupLocation,
 			duration,
 			requests,
@@ -99,6 +99,5 @@ export const actions = {
 		});
 
 		throw redirect(302, '/mybookings');
-
 	}
 };

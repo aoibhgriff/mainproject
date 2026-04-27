@@ -19,6 +19,7 @@
 			<p>Car: {b.carName}</p>
 			<p>Date: {b.date}</p>
 			<p>Event: {b.eventType}</p>
+            <p>Package: {b.package}</p>
 			<p>Status: {b.status}</p>
 
 			{#if b.status === 'pending'}

@@ -19,7 +19,7 @@ export const auth = betterAuth({
 			},
 			category: {
 				type: 'string',
-				defaultValue: '',
+				defaultValue: 'bronze',
 				required: false
 			}
 		}
