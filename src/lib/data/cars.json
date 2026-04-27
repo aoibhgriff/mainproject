@@ -1,14 +1,122 @@
 [
-	{
-		"id": "1",
-		"name": "Rolls Royce",
-		"price": 600,
-		"image": "/images/matt.png"
-	},
-	{
-		"id": "2",
-		"name": "Ferrari",
-		"price": 500,
-		"image": "/images/matt.png"
-	}
+  {
+    "id": "1",
+    "name": "Rolls Royce Phantom",
+    "price": 850,
+    "image": "/images/rolls.jpg",
+    "seats": 4,
+    "colour": "White",
+    "category": "Wedding",
+    "description": "The ultimate luxury wedding vehicle with handcrafted interior, rear lounge seating and iconic presence."
+  },
+  {
+    "id": "2",
+    "name": "Bentley Flying Spur",
+    "price": 700,
+    "image": "/images/bentley.jpg",
+    "seats": 4,
+    "colour": "Silver",
+    "category": "Wedding",
+    "description": "Elegant grand touring saloon combining prestige styling with exceptional passenger comfort."
+  },
+  {
+    "id": "3",
+    "name": "Mercedes S-Class",
+    "price": 550,
+    "image": "/images/merc.jpg",
+    "seats": 4,
+    "colour": "Black",
+    "category": "Executive",
+    "description": "A premium chauffeur favourite offering comfort, privacy and refined luxury for formal occasions."
+  },
+  {
+    "id": "4",
+    "name": "BMW 7 Series",
+    "price": 500,
+    "image": "/images/bmw.jpg",
+    "seats": 4,
+    "colour": "Blue",
+    "category": "Executive",
+    "description": "Modern executive luxury saloon with advanced technology and spacious rear seating."
+  },
+  {
+    "id": "5",
+    "name": "Audi A8",
+    "price": 500,
+    "image": "/images/audi.jpg",
+    "seats": 4,
+    "colour": "Grey",
+    "category": "Executive",
+    "description": "Sophisticated business-class luxury vehicle ideal for corporate and VIP travel."
+  },
+  {
+    "id": "6",
+    "name": "Range Rover Autobiography",
+    "price": 650,
+    "image": "/images/range.jpg",
+    "seats": 5,
+    "colour": "Black",
+    "category": "VIP",
+    "description": "Luxury SUV with commanding presence, ideal for premium events and high-profile guests."
+  },
+  {
+    "id": "7",
+    "name": "Ferrari Roma",
+    "price": 1200,
+    "image": "/images/ferrari.jpg",
+    "seats": 2,
+    "colour": "Red",
+    "category": "Sports",
+    "description": "Stylish Italian grand tourer for unforgettable arrivals and exclusive special occasions."
+  },
+  {
+    "id": "8",
+    "name": "Porsche Panamera",
+    "price": 750,
+    "image": "/images/porsche.jpg",
+    "seats": 4,
+    "colour": "White",
+    "category": "Sports",
+    "description": "Performance luxury saloon offering both excitement and practical rear passenger comfort."
+  },
+  {
+    "id": "9",
+    "name": "Maserati Quattroporte",
+    "price": 700,
+    "image": "/images/maserati.jpg",
+    "seats": 4,
+    "colour": "Navy",
+    "category": "VIP",
+    "description": "Distinctive Italian luxury saloon with elegant styling and premium comfort."
+  },
+  {
+    "id": "10",
+    "name": "Jaguar XJ",
+    "price": 520,
+    "image": "/images/jaguar.jpg",
+    "seats": 4,
+    "colour": "Green",
+    "category": "Wedding",
+    "description": "Classic British prestige saloon ideal for traditional ceremonies and stylish arrivals."
+  },
+  {
+    "id": "11",
+    "name": "Mercedes V-Class",
+    "price": 480,
+    "image": "/images/mercv.jpg",
+    "seats": 7,
+    "colour": "Black",
+    "category": "Group",
+    "description": "Luxury people carrier perfect for bridal parties, family groups and VIP transfers."
+  },
+  {
+    "id": "12",
+    "name": "Lamborghini Urus",
+    "price": 1400,
+    "image": "/images/lambo.jpg",
+    "seats": 5,
+    "colour": "Yellow",
+    "category": "Sports",
+    "description": "High-performance luxury SUV delivering dramatic presence for elite events."
+  }
 ]

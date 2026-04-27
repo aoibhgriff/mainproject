@@ -117,3 +117,19 @@ Added some form validation constraints and new form fields
 
 Then I commit this Stage 5 update to github.
 
+- Stage 6 -
+Car update
+Replaced my placeholder car JSON and updated pages
+
+1. I replaced my placeholder cars.json file with actual fully fledged car entries.
+
+2. I sourced images for the respective cars to include.
+
+3. I updated my cars page to showcase some of the new fields + images
+
+4. I updated the cars[id] page to include all car information + images
+
+Next I plan to do a small update to the booking page to showcase some of the car information as currently there is no information to the car actively being booked.
+
+Then I commit this Stage 6 update to github.
+
