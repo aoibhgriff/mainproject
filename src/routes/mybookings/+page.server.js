@@ -1,6 +1,6 @@
 import { db } from '$lib/server/db';
 import { booking } from '$lib/server/db/schema';
-import { eq } from 'drizzle-orm';
+import { eq, and } from 'drizzle-orm';
 import { redirect } from '@sveltejs/kit';
 
 export const load = async ({ locals }) => {
@@ -15,7 +15,24 @@ export const load = async ({ locals }) => {
 		.where(eq(booking.userId, locals.user.id))
 		.all();
 
-	return {
-		bookings
-	};
+	return { bookings };
+};
+
+export const actions = {
+
+	cancel: async ({ request, locals }) => {
+
+		const form = await request.formData();
+
+		await db
+			.delete(booking)
+			.where(
+				and(
+					eq(booking.id, form.get('id')),
+					eq(booking.userId, locals.user.id)
+				)
+			);
+
+		return { success: true };
+	}
 };

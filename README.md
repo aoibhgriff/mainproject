@@ -102,3 +102,18 @@ Added an admin page only accessible to admins that can manage bookings
 Next I plan to go through my site and see if there's anything that needs fixing
 
 Then I commit this Stage 4 update to github.
+
+- Stage 5 - 
+Update to bookings system
+Added some form validation constraints and new form fields
+
+1. I needed to use GenAI to help me again as I was adding more fields to the booking system which I set up through the DB so I added extra fields for duration, special requests, and pickup location to both the form and the DB
+
+2. I pushed the DB update
+
+3. I added a redirect from the booking form to "My Bookings" upon successful booking
+
+4. Added ability for users to cancel their booking if not yet accepted
+
+Then I commit this Stage 5 update to github.
+
